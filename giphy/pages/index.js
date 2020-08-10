@@ -7,7 +7,7 @@ import SaveButton from '../components/SaveButton';
 export default function Home() {
   const [storage, setStorage] = useState(null);
   const [load, setLoad] = useState(false);
-  const [searchInput, setSearchInput] = useState(null);
+  const [searchInput, setSearchInput] = useState('');
   const [gif, setGif] = useState(null);
   const [gifId, setGifId] = useState(null);
 
