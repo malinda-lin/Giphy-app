@@ -1,0 +1,30 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  width: 60vw;
+  background-color: white;
+  border: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 60vw;
+  background-color: white;
+  border: none;
+}
+button:active,
+button:focus {
+  outline:none;
+}
