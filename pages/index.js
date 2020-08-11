@@ -45,25 +45,26 @@ export default function Home() {
         <title>Giphy App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <input
-            className={styles.input}
-            type="text"
-            value={searchInput}
-            onChange={handleChange}
-            placeholder="Search for a gif!"
-          />
-          <button className={styles.button} type="submit">
-            Search
-          </button>
-        </form>
-        <SaveButton id={gifId} url={gif} storage={storage} />
-        <a href="/favorites" className={styles.favorites}>
-          My Favorites
-        </a>
+        <nav className={styles.nav}>
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <input
+              className={styles.input}
+              type="text"
+              value={searchInput}
+              onChange={handleChange}
+              placeholder="Search for a gif!"
+            />
+            <button className={styles.button} type="submit">
+              Search
+            </button>
+          </form>
+          <a href="/favorites" className={styles.favorites}>
+            My Favorites
+          </a>
+        </nav>
         <div className={styles['gif-container']}>
+          <SaveButton id={gifId} url={gif} storage={storage} />
           <iframe
             title="gif result"
             src={gif}

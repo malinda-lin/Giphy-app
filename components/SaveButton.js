@@ -4,11 +4,13 @@ const SaveButton = ({id, url, storage}) => {
   };
 
   return (
-    <div>
-      <button type="button" onClick={handleClick}>
-        Save it!
-      </button>
-    </div>
+    <button
+      type="button"
+      onClick={handleClick}
+      style={{color: 'pink', backgroundColor: 'transparent'}}
+    >
+      {'Save to favorites <3'}
+    </button>
   );
 };
 

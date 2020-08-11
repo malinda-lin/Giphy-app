@@ -19,12 +19,11 @@ const favorites = () => {
         return favArray.map(key => {
           const url = storage.getItem(key);
           return (
-            <div key="key" className={styles.gif}>
+            <div key="key" className={styles['gif-container']}>
               <iframe
                 title="gif result"
                 src={url}
                 frameBorder="0"
-                className=""
                 allowFullScreen
               />
             </div>

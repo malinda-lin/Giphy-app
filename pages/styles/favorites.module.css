@@ -1,9 +1,13 @@
 
 .container {
+  width: 100vw;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-.gif {
+.gif-container {
+  /* align-self: center; */
   border: 1px dotted pink;
   margin: 5px;
   width: 100%;
